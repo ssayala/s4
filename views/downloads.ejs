@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= settings.title %></title>
+    <%-partial('stylesheets')%>
+</head>
+<body>
+
+<%-partial('navbar',[navbar])%>
+<div class="container starter-template">
+    <h3>Available Downloads</h3>
+    <ul>
+        <% for(var j = 0; j < keys.length ; j++) { %>
+        <li><a href='<%= keys[j].url %>'><%= keys[j].title %></a></li>
+        <% } %>
+    </ul>
+</div>
+<!-- /.container -->
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

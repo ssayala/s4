@@ -1,0 +1,8 @@
+{
+    "title": "S3 File Share",
+    "bucket": "AWS_BUCKET_NAME",
+    "awsPrefix": "downloads",
+    "projectName": "S4",
+    "mongodb": "mongodb://localhost/s4",
+    "secret": "superSecret123"
+}

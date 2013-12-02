@@ -1,0 +1,17 @@
+{
+  "name": "s4",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.0",
+    "ejs": "*",
+    "less-middleware": "*",
+    "ejs-locals": "~1.0.2",
+    "aws-sdk": "~1.12.0",
+    "bcrypt": "~0.7.7",
+    "mongoose": "~3.8.0"
+  }
+}

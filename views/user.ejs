@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= settings.title %></title>
+    <%-partial('stylesheets')%>
+</head>
+<body>
+<%-partial('navbar',[navbar])%>
+<div class="container starter-template">
+    <form role="form" action="/user" method="post">
+        <h3><%= pageTitle %></h3>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="input-name" placeholder="Enter Name" name="name" value="<%= editUser.name  %>">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="input-email" placeholder="Enter Email" name="email" value="<%= editUser.email %>">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="input-password" placeholder="Enter Password" name="password" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <label for="password">ReEnter Password</label>
+            <input type="password" class="form-control" id="input-password" placeholder="ReEnter Password" name="repassword" autocomplete="off">
+        </div>
+        <% if (currentUser.administrator) { %>
+            <div class="form-group">
+                <label for="customerId">Customer Id</label>
+                <input type="text" class="form-control" id="input-customer-id" placeholder="Enter Customer Id" name="customerId" autocomplete="off">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Administrator
+                </label>
+            </div>
+        <% } %>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+<!-- /.container -->
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

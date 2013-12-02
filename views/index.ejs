@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= settings.title %></title>
+    <%-partial('stylesheets')%>
+</head>
+<body>
+
+<%-partial('navbar')%>
+<div class="container starter-template">
+    <form class="form-signin" action="/login" method="post">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="text" class="form-control" placeholder="Email address" autofocus name="email">
+        <input type="password" class="form-control" placeholder="Password" name="password">
+        <button class="btn btn-lg btn-default btn-block" type="submit">Sign in</button>
+    </form>
+</div>
+<!-- /.container -->
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
