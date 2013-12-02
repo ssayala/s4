@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 S3 Share aka S4
 ===============
 
@@ -30,9 +29,3 @@ for each customer and put the files you want to share with the customer. While c
 Disclaimer
 ---------
 I am a node newbie and I am pretty sure this codebase has newbie mistakes everywhere and probably is not very idiomatic.
-=======
-s4
-==
-
-S3 File Share (aka S4)
->>>>>>> 1b8f9cb3f0eb03242ace4f0bcfb57221b574aa83
